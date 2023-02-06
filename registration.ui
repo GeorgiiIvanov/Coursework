@@ -1,77 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>registration</class>
- <widget class="QMainWindow" name="registration">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>450</width>
-    <height>550</height>
+    <width>350</width>
+    <height>450</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Авторизация</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QLineEdit" name="login">
+   <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>101</x>
-      <y>140</y>
-      <width>250</width>
-      <height>35</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>14</pointsize>
-     </font>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="name">
-    <property name="geometry">
-     <rect>
-      <x>101</x>
-      <y>220</y>
-      <width>250</width>
-      <height>35</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>14</pointsize>
-     </font>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="password">
-    <property name="geometry">
-     <rect>
-      <x>101</x>
-      <y>300</y>
-      <width>250</width>
-      <height>35</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>14</pointsize>
-     </font>
-    </property>
-    <property name="inputMask">
-     <string/>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_1234">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>140</y>
-      <width>70</width>
-      <height>35</height>
+      <x>10</x>
+      <y>90</y>
+      <width>75</width>
+      <height>40</height>
      </rect>
     </property>
     <property name="font">
@@ -83,31 +32,13 @@
      <string>Логин</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_2">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>220</y>
-      <width>70</width>
-      <height>35</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>14</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string>Имя</string>
-    </property>
-   </widget>
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>300</y>
-      <width>70</width>
-      <height>35</height>
+      <x>10</x>
+      <y>140</y>
+      <width>75</width>
+      <height>40</height>
      </rect>
     </property>
     <property name="font">
@@ -119,40 +50,83 @@
      <string>Пароль</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_4">
+   <widget class="QPushButton" name="ButtonSignUp">
     <property name="geometry">
      <rect>
-      <x>150</x>
-      <y>80</y>
-      <width>152</width>
+      <x>85</x>
+      <y>230</y>
+      <width>235</width>
       <height>40</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <pointsize>20</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string>Регистрация</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="reg">
-    <property name="geometry">
-     <rect>
-      <x>101</x>
-      <y>360</y>
-      <width>250</width>
-      <height>35</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>12</pointsize>
+      <pointsize>14</pointsize>
      </font>
     </property>
     <property name="text">
      <string>Зарегистрироваться</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>85</x>
+      <y>190</y>
+      <width>241</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Пароль должен содержать минимум 8 символов</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="loginREG">
+    <property name="geometry">
+     <rect>
+      <x>85</x>
+      <y>90</y>
+      <width>235</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="passwordREG">
+    <property name="geometry">
+     <rect>
+      <x>85</x>
+      <y>150</y>
+      <width>235</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>85</x>
+      <y>130</y>
+      <width>231</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Логин должен содержать минимум 1 символ</string>
     </property>
    </widget>
   </widget>
@@ -161,7 +135,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>450</width>
+     <width>350</width>
      <height>21</height>
     </rect>
    </property>
